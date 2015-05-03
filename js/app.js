@@ -9,6 +9,12 @@ demoApp.config(function ($routeProvider) {
         .when('/about', {
             controller: '',
             templateUrl: 'templates/about.html'})
+        .when('/activity', {
+            controller: '',
+            templateUrl: 'templates/activity.html'})
+        .when('/contacts', {
+            controller: '',
+            templateUrl: 'templates/contacts.html'})
         .otherwise({
             redirectTo : '/home'});
 });
