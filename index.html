@@ -1,42 +1,28 @@
-
 <!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" lang="en-US">
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="en-US">
-<![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html lang="en-US">
+<html lang="en-US" data-ng-app="App">
 <!--<![endif]-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Kindergarten WordPress Theme | Just another WordPress Themes and Plugins site</title>
-    <link rel="shortcut icon" href="http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/favicon.ico">
-    <link href="http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-    <link href="http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="http://ithemewordpress.com/kindergarten-theme/xmlrpc.php">
-    <!--[if lt IE 9]>
-    <script src="http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/html5.js"></script>
-    <![endif]-->
-    <link rel="alternate" type="application/rss+xml" title="Kindergarten WordPress Theme &raquo; Feed" href="http://ithemewordpress.com/kindergarten-theme/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Kindergarten WordPress Theme &raquo; Comments Feed" href="http://ithemewordpress.com/kindergarten-theme/comments/feed/" />
-    <link rel='stylesheet' id='kindergarten-bootstrapcss-css'  href='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/bootstrap/css/bootstrap.min.css?ver=3.0.2' type='text/css' media='all' />
-    <link rel='stylesheet' id='kindergarten-fontawesomecss-css'  href='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/bootstrap/css/font-awesome.css?ver=1.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='vw-googlefontcyrillic-css'  href='//fonts.googleapis.com/css?family=Fira+Sans%3A700&#038;subset=cyrillic&#038;ver=1.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='kindergarten-style-css'  href='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/style.css?ver=10.0' type='text/css' media='all' />
 
-    <script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
-    <script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-    <script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/modernizr.js?ver=1.0'></script>
-    <script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/respond.js?ver=1.0'></script>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ithemewordpress.com/kindergarten-theme/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ithemewordpress.com/kindergarten-theme/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 4.1.1" />
-    <link rel='canonical' href='http://ithemewordpress.com/kindergarten-theme/' />
-    <link rel='shortlink' href='http://ithemewordpress.com/kindergarten-theme/' />
+    <!--Load jQuery-->
+    <script type='text/javascript' src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!--Load Bootstrap!-->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!--Load Angular-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+
+    <!--Load styling-->
+    <link rel='stylesheet' id='kindergarten-style-css'  href='styles/style.css' type='text/css' media='all' />
+
+    <!--Load scripts-->
+    <script src="js/app.js"></script>
+
 </head>
 
 <body class="home page page-id-1602 page-template page-template-front-page page-template-front-page-php single-author">
@@ -44,14 +30,18 @@
 
     <!-- header -->
     <header id="masthead" role="banner">
-        <a style="display: none;" class="home-link" href="http://ithemewordpress.com/kindergarten-theme/" title="Kindergarten WordPress Theme" rel="home">
-            <h1 class="site-title">Kindergarten WordPress Theme</h1>
-            <h2 class="site-description">Just another WordPress Themes and Plugins site</h2>
-        </a>
+
+        <!--<a style="display: none;" class="home-link" href="http://ithemewordpress.com/kindergarten-theme/" title="Kindergarten WordPress Theme" rel="home">-->
+            <!--<h1 class="site-title">Kindergarten WordPress Theme</h1>-->
+            <!--<h2 class="site-description">Just another WordPress Themes and Plugins site</h2>-->
+        <!--</a>-->
+
         <a href="http://ithemewordpress.com/kindergarten-theme/" class="logo">
             <img src="images/logo.png" height="100" width="180" alt="" />
         </a>
+
         <nav role="navigation" id="sun-nav">
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -64,12 +54,12 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="nav-menu">
                     <ul>
-                        <li class="page_item page-item-1602 current_page_item"><a href="http://ithemewordpress.com/kindergarten-theme/">Начало</a></li>
-                        <li class="page_item page-item-1478"><a href="http://ithemewordpress.com/kindergarten-theme/about-us/">За нас</a></li>
-                        <li class="page_item page-item-1545"><a href="http://ithemewordpress.com/kindergarten-theme/gallery/">Галерия</a></li>
-                        <li class="page_item page-item-703"><a href="http://ithemewordpress.com/kindergarten-theme/blog/">Блог</a></li>
-                        <li class="page_item page-item-1601"><a href="http://ithemewordpress.com/kindergarten-theme/contact/">Контакти</a></li>
-                        <li class="page_item page-item-176 page_item_has_children"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/">3-level menu</a>
+                        <li><a href="#home">Начало</a></li>
+                        <li><a href="#about">За нас</a></li>
+                        <li><a>Галерия</a></li>
+                        <li class="page_item page-item-703"><a>Блог</a></li>
+                        <li class="page_item page-item-1601"><a>Контакти</a></li>
+                        <li class="page_item page-item-176 page_item_has_children"><a>3-level menu</a>
                             <ul class='children'>
                                 <li class="page_item page-item-174 page_item_has_children"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/this-is-the-second-level/">This is the second level</a>
                                     <ul class='children'>
@@ -91,7 +81,7 @@
 
 
 
-    <!-- front page header featured area -->
+    <!-- IMAGE SLIDER-->
     <section id="featured">
         <div id="featured-imgs">
             <div id="slider-featured">
@@ -99,15 +89,23 @@
                     <div class="ws_images">
                         <ul>
                             <li>
-                                <img src="http://ithemewordpress.com/kindergarten-theme/wp-content/plugins/cp-wowslider/design/images/01.png" alt="" title="" id="wows1_1"/>
+                                <img src="images/slider/slide1.jpg" alt="" title="" id="wows1_1"/>
                             </li>
                             <li>
-                                <img src="http://ithemewordpress.com/kindergarten-theme/wp-content/plugins/cp-wowslider/design/images/02.png" alt="" title="" id="wows1_2"/>
+                                <img src="images/slider/slide2.jpg" alt="" title="" id="wows1_2"/>
+                            </li>
+                            <li>
+                                <img src="images/slider/slide3.jpg" alt="" title="" id="wows1_2"/>
+                            </li>
+                            <li>
+                                <img src="images/slider/slide4.jpg" alt="" title="" id="wows1_2"/>
                             </li>
                         </ul>
                     </div>
                     <div class="ws_bullets">
                         <div>
+                            <a href="#" title=""></a>
+                            <a href="#" title=""></a>
                             <a href="#" title=""></a>
                             <a href="#" title=""></a>
                         </div>
@@ -118,88 +116,9 @@
     </section>
     <!-- end front page header featured area -->
 
-    <section id="content-homepage">
-        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-            <div id="col-yellow">
-                <div id="ladybug"></div>
-                <div id="text-2" class="widget widget_text"><h3 class="widget-title">Home Widget Area 1</h3>			<div class="textwidget"><p><img src="http://ithemewordpress.com/kindergarten-theme/wp-content/uploads/sites/2/2013/11/photodune-4380907-thirst-for-knowledge-s-604x270.jpg" alt="kids" /></p>
-                    <p>This is the first of three homepage widget areas. You can add as many widgets as you like in these three colored columns, and also add content from dashboard.</p>
-                </div>
-                </div>		</div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-12">
-            <div id="col-green">
-                <div id="butterfly"></div>
-                <div id="recent-posts-3" class="widget widget_recent_entries">		<h3 class="widget-title">Recent blog posts</h3>		<ul>
-                    <li>
-                        <a href="http://ithemewordpress.com/kindergarten-theme/2014/03/22/hello-world/">Hello world!</a>
-                    </li>
-                    <li>
-                        <a href="http://ithemewordpress.com/kindergarten-theme/2014/01/19/tables-and-formatting/">Tables and formatting</a>
-                    </li>
-                    <li>
-                        <a href="http://ithemewordpress.com/kindergarten-theme/2012/01/07/template-sticky/">Template: Sticky</a>
-                    </li>
-                    <li>
-                        <a href="http://ithemewordpress.com/kindergarten-theme/2011/03/15/media-twitter-embeds/">Media: Twitter Embeds</a>
-                    </li>
-                    <li>
-                        <a href="http://ithemewordpress.com/kindergarten-theme/2010/10/05/post-format-standard/">Post Format: Standard</a>
-                    </li>
-                    <li>
-                        <a href="http://ithemewordpress.com/kindergarten-theme/2010/08/08/post-format-image/">Post Format: Image</a>
-                    </li>
-                    <li>
-                        <a href="http://ithemewordpress.com/kindergarten-theme/2010/06/02/post-format-video-youtube/">Post Format: Video (YouTube)</a>
-                    </li>
-                </ul>
-                </div>		</div>
-        </div>
-        <div class="col-lg-3 col-sm-4 col-xs-12">
-            <div id="col-orange">
-                <div id="calendar-2" class="widget widget_calendar"><h3 class="widget-title">Calendar</h3><div id="calendar_wrap"><table id="wp-calendar">
-                    <caption>May 2015</caption>
-                    <thead>
-                    <tr>
-                        <th scope="col" title="Monday">M</th>
-                        <th scope="col" title="Tuesday">T</th>
-                        <th scope="col" title="Wednesday">W</th>
-                        <th scope="col" title="Thursday">T</th>
-                        <th scope="col" title="Friday">F</th>
-                        <th scope="col" title="Saturday">S</th>
-                        <th scope="col" title="Sunday">S</th>
-                    </tr>
-                    </thead>
 
-                    <tfoot>
-                    <tr>
-                        <td colspan="3" id="prev"><a href="http://ithemewordpress.com/kindergarten-theme/2014/03/">&laquo; Mar</a></td>
-                        <td class="pad">&nbsp;</td>
-                        <td colspan="3" id="next" class="pad">&nbsp;</td>
-                    </tr>
-                    </tfoot>
-
-                    <tbody>
-                    <tr>
-                        <td colspan="4" class="pad">&nbsp;</td><td>1</td><td id="today">2</td><td>3</td>
-                    </tr>
-                    <tr>
-                        <td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
-                    </tr>
-                    <tr>
-                        <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
-                    </tr>
-                    <tr>
-                        <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
-                    </tr>
-                    <tr>
-                        <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
-                    </tr>
-                    </tbody>
-                </table></div></div>		</div>
-        </div>
-        <div class="clearfix"></div>
-    </section><!-- #content-homepage / #content -->
+    <div data-ng-view>
+    </div>
 
 </div><!-- #page -->
 <footer role="contentinfo">
@@ -216,7 +135,25 @@
                 <a href="#">&#xf166;</a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 footer-links">
-                <div class=""><ul><li class="page_item page-item-1602 current_page_item"><a href="http://ithemewordpress.com/kindergarten-theme/">Home</a></li><li class="page_item page-item-1478"><a href="http://ithemewordpress.com/kindergarten-theme/about-us/">About us</a></li><li class="page_item page-item-1545"><a href="http://ithemewordpress.com/kindergarten-theme/gallery/">Gallery</a></li><li class="page_item page-item-703"><a href="http://ithemewordpress.com/kindergarten-theme/blog/">Blog</a></li><li class="page_item page-item-1601"><a href="http://ithemewordpress.com/kindergarten-theme/contact/">Contact</a></li><li class="page_item page-item-176 page_item_has_children"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/">3-level menu</a><ul class='children'><li class="page_item page-item-174 page_item_has_children"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/this-is-the-second-level/">This is the second level</a><ul class='children'><li class="page_item page-item-172"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/this-is-the-second-level/level-3/">Level 3</a></li><li class="page_item page-item-779"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/this-is-the-second-level/level-3a/">Level 3a</a></li></ul></li></ul></li></ul></div>
+                <div class="">
+                    <ul>
+                        <li class="page_item page-item-1602 current_page_item"><a href="http://ithemewordpress.com/kindergarten-theme/">Home</a></li>
+                        <li class="page_item page-item-1478"><a href="http://ithemewordpress.com/kindergarten-theme/about-us/">About us</a></li>
+                        <li class="page_item page-item-1545"><a href="http://ithemewordpress.com/kindergarten-theme/gallery/">Gallery</a></li>
+                        <li class="page_item page-item-703"><a href="http://ithemewordpress.com/kindergarten-theme/blog/">Blog</a></li>
+                        <li class="page_item page-item-1601"><a href="http://ithemewordpress.com/kindergarten-theme/contact/">Contact</a></li>
+                        <li class="page_item page-item-176 page_item_has_children"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/">3-level menu</a>
+                            <ul class='children'>
+                                <li class="page_item page-item-174 page_item_has_children"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/this-is-the-second-level/">This is the second level</a>
+                                    <ul class='children'>
+                                        <li class="page_item page-item-172"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/this-is-the-second-level/level-3/">Level 3</a></li>
+                                        <li class="page_item page-item-779"><a href="http://ithemewordpress.com/kindergarten-theme/3-level-menu/this-is-the-second-level/level-3a/">Level 3a</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -230,26 +167,28 @@
     </div>
 </footer>
 
-
+<!--Load slider libs-->
 <script type='text/javascript'>
     /* <![CDATA[ */
-    var cp_wowslider = {"config":"{\"effect\":\"fade\",\"duration\":2000,\"delay\":2000,\"width\":670,\"height\":400,\"captionDuration\":2000}"};
+    var cp_wowslider = {
+        "config":
+                "{\"effect\":\"fade\"," +
+                "\"duration\":2000," +
+                "\"delay\":2000," +
+                "\"width\":670," +
+                "\"height\":400," +
+                "\"captionDuration\":2000}"
+    };
     /* ]]> */
 </script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/plugins/cp-wowslider/js/main.js?ver=1.0'></script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/plugins/cp-wowslider/js/slider.js?ver=1.0.0'></script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/plugins/cp-wowslider/js/fade.js?ver=1.0.0'></script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/bootstrap/js/bootstrap.min.js?ver=3.0.2'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var ajax = {"url":"http:\/\/ithemewordpress.com\/kindergarten-theme\/wp-admin\/admin-ajax.php"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/custom.js?ver=1.1'></script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/jquery.prettyPhoto.js?ver=1.0'></script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/jquery.easing.1.3.js?ver=1.0'></script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/functions.js?ver=2013-07-18'></script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/prettyphoto/js/jquery.prettyPhoto.js?ver=1.0'></script>
-<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/prettyphoto/js/pp-config.js?ver=1.0'></script>
+<script type='text/javascript' src='js/slider/main.js'></script>
+<script type='text/javascript' src='js/slider/slider.js'></script>
+<script type='text/javascript' src='js/slider/fade.js'></script>
+<!--<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/custom.js?ver=1.1'></script>-->
+<!--<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/jquery.prettyPhoto.js?ver=1.0'></script>-->
+<!--<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/jquery.easing.1.3.js?ver=1.0'></script>-->
+<!--<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/js/functions.js?ver=2013-07-18'></script>-->
+<!--<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/prettyphoto/js/jquery.prettyPhoto.js?ver=1.0'></script>-->
+<!--<script type='text/javascript' src='http://ithemewordpress.com/kindergarten-theme/wp-content/themes/kindergarten/prettyphoto/js/pp-config.js?ver=1.0'></script>-->
 </body>
 </html>
