@@ -30,6 +30,13 @@ Read More: http://codex.wordpress.org/Child_Themes
 /*@import url('bootstrap/css/bootstrap.css');*/
 
 @font-face {
+    font-family: 'CDG';
+    src: url('fonts/Arvo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Solomon Normal';
     src: url('fonts/solomon_normal-webfont.eot');
     src: url('fonts/solomon_normal-webfont.eot?#iefix') format('embedded-opentype'),
@@ -42,12 +49,7 @@ Read More: http://codex.wordpress.org/Child_Themes
 
 @font-face {
     font-family: 'dimboregular';
-    src: url('fonts/dimbo_regular-webfont.eot');
-    src: url('fonts/dimbo_regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/dimbo_regular-webfont.woff2') format('woff2'),
-    url('fonts/dimbo_regular-webfont.woff') format('woff'),
-    url('fonts/dimbo_regular-webfont.ttf') format('truetype'),
-    url('fonts/dimbo_regular-webfont.svg#dimboregular') format('svg');
+    src: url('fonts/Arvo-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 
@@ -58,7 +60,7 @@ Read More: http://codex.wordpress.org/Child_Themes
 
 body	{
     margin: 0;
-    font: 14px/25px 'Solomon Normal', sans-serif;
+    font: 14px/25px 'CDG', sans-serif;
     color: #363636;
     background: url(images/linedpaper.png) repeat #fffdf0;
 }
@@ -226,12 +228,12 @@ header	{
 
 #sun-nav .children a,
 #sun-nav .sub-menu a	{
-    font: 15px 'Solomon Normal', sans-serif;
+    font: 15px 'CDG', sans-serif;
 }
 
 #sun-nav .children ul li a,
 #sun-nav .sub-menu ul li a	{
-    font: 13px 'Solomon Normal', sans-serif;
+    font: 13px 'CDG', sans-serif;
 }
 
 .navbar-collapse	{
@@ -240,6 +242,12 @@ header	{
     top: 0; left: 0; bottom: 0; right: 0;
     z-index: 999;
     padding: 0 155px 80px 185px;
+}
+
+.nav-menu{
+    position: absolute;
+    top: 60px;
+    left: 230px;
 }
 
 .nav-menu .sub-menu,
@@ -309,7 +317,7 @@ ul.nav-menu li:hover > ul,
 }
 
 .button span	{
-    font-family: 'FontAwesome';
+    font-family: 'CDG';
     margin-right: 5px;
 }
 
@@ -333,7 +341,7 @@ input[type="submit"] {
     cursor: pointer;
     -webkit-appearance: none;
     border: 0;
-    font-family: 'FontAwesome', 'Solomon Normal';
+    font-family: 'CDG', 'Solomon Normal';
 }
 
 html input[type="text"],
@@ -341,7 +349,7 @@ html input[type="email"],
 html input[type="url"],
 textarea	{
     border: 0;
-    font-family: 'Solomon Normal', sans-serif;
+    font-family: 'CDG', sans-serif;
     background: #fdf1d1;
     border-radius: 4px;
     margin-bottom: 15px;
@@ -351,7 +359,7 @@ textarea	{
 
 select	{
     border: 0;
-    font-family: 'Solomon Normal', sans-serif;
+    font-family: 'CDG', sans-serif;
     background: #fdf1d1;
     border-radius: 4px;
     margin-bottom: 15px;
@@ -520,7 +528,7 @@ div.pp_default .pp_nav {
 }
 
 div.pp_default .pp_nav .currentTextHolder {
-    font-family: Georgia;
+    font-family: CDG;
     font-style: italic;
     color: #999;
     font-size: 11px;
@@ -1189,6 +1197,12 @@ div.pp_default .pp_details {
 @-moz-keyframes wsBasic{0%{left: -0%} 25%{left: -0%} 50%{left: -100%} 75%{left: -100%} }
 @-webkit-keyframes wsBasic{0%{left: -0%} 25%{left: -0%} 50%{left: -100%} 75%{left: -100%} }
 
+#templateView{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 #featured	{
     position: relative;
 }
@@ -1552,7 +1566,7 @@ img.wp-smiley,
 
 .widget .widget-title {
     margin: 10px 0;
-    font: 28px 'dimboregular', 'Fira Sans', sans-serif;
+    font: 28px 'CDG', 'Fira Sans', sans-serif;
     line-height: 30px;
     color: #fff;
     /*text-transform: uppercase;*/
@@ -2756,7 +2770,7 @@ img.alignnone {
     }
     .cloud h1 {
         color: #61cbe6;
-        font: 24px 'dimboregular', 'Fira Sans';
+        font: 24px 'CDG', 'Fira Sans';
         text-align: center;
         padding: 80px 30px 0 30px;
     }
@@ -2784,7 +2798,7 @@ img.alignnone {
     }
     .cloud h1 {
         color: #61cbe6;
-        font: 24px 'dimboregular', 'Fira Sans';
+        font: 24px 'CDG', 'Fira Sans';
         text-align: center;
         padding: 80px 30px 0 30px;
     }
@@ -2906,7 +2920,7 @@ only screen and (min-device-pixel-ratio:1.5) and (max-width: 640px) {
     }
     .cloud h1 {
         color: #61cbe6;
-        font: 24px 'dimboregular', 'Fira Sans';
+        font: 24px 'CDG', 'Fira Sans';
         text-align: center;
         padding: 120px 30px 0 30px;
     }
